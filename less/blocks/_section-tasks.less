@@ -1,0 +1,116 @@
+.section-tasks {
+    position: relative;
+    padding-top: 73px;
+    padding-bottom: 44px;
+    background-color: #fff;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        padding-top: 66px;
+        padding-bottom: 37px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 95px;
+        padding-bottom: 19px;
+    }
+}
+
+.section-tasks::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 50%;
+    width: 68px;
+    height: 68px;
+    transform: translate(50%, -50%) rotate(45deg);
+    background-color: #a4eecb;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 1200px) {
+        display: block;
+        width: 130px;
+        height: 130px;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+.section-tasks__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media (min-width: 768px) {
+        flex-direction: row-reverse;
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        padding-left: 98px;
+        padding-right: 150px;
+    }
+}
+
+.section-tasks__content {
+    max-width: 470px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        max-width: 380px;
+        padding-bottom: 74px;
+    }
+    
+    @media (min-width: 1200px) {
+        max-width: 470px;
+        padding-bottom: 4px;
+        padding-right: 0;
+    }
+}
+
+.section-tasks__title {
+    margin-bottom: 33px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 37px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 36px;
+    }
+}
+
+.section-tasks__header {
+    margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 16px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+
+.section-tasks__img-wrapper {
+    max-width: 200px;
+    margin-top: 57px;
+
+    @media (min-width: 768px) {
+        max-width: 270px;
+        margin-top: 0;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 370px;
+    }
+}

@@ -1,0 +1,141 @@
+.footer {
+    background-color: #1a1a1a;
+    padding-top: 58px;
+    padding-bottom: 60px;
+
+    @media (min-width: 768px) {
+        padding-top: 74px;
+        padding-bottom: 75px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 80px; 
+    }
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 42px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+}
+
+.footer__nav-items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 53px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 1200px) {
+        text-align: left;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+}
+
+.footer-item {
+    margin-bottom: 27px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    color: #ffffff;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+
+.footer-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-item:last-child {
+    margin-right: 0;
+}
+
+.footer-item:hover {
+    color: #50e3a4;
+    transition: 0.4s ease;
+}
+
+.footer__nav-social {
+    display: flex;
+}
+
+.social-item {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 22px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    @media (min-width: 768px) {
+        margin-right: 32px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-right: 35px;
+    }
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-item:hover {
+    background-color: #50e3a4;
+    transition: linear 0.2s;
+}
+
+.footer__copyright {
+    width: 195px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.3);
+
+    @media (min-width: 1200px) {
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
+
+.footer__copyright p{
+    margin: 0;
+}
+
+.footer__copyright strong {
+    letter-spacing: 1.4px;
+}

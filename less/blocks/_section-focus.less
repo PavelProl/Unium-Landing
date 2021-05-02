@@ -1,0 +1,129 @@
+.section-focus {
+    position: relative;
+    padding-top: 74px;
+    padding-bottom: 26px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFF;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        padding-top: 59px;
+        padding-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 80px;
+    }
+}
+
+.section-focus::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 50%;
+    width: 68px;
+    height: 68px;
+    transform: translate(50%, -50%) rotate(45deg);
+    background-color: #a4eecb;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 1200px) {
+        display: block;
+        width: 130px;
+        height: 130px;
+        top: 50%;
+        right: 0;
+    }
+}
+
+.section__row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        padding-right: 22px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-right: 3px;
+    }
+}
+
+.section-focus__img-wrapper {
+    position: relative;
+    max-width: 470px;
+
+    @media (min-width: 768px) {
+        max-width: unset;
+        width: 287px;
+        height: 505px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 731px;
+        width: 470px;  
+    }
+}
+
+.section-focus__img {
+    width: auto;
+    max-height: 100%;
+
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: unset;
+        height: 100%;
+    }
+}
+
+.section-focus__content {
+    max-width: 470px;
+    text-align: center;
+    margin-bottom: 55px;
+
+    @media (min-width: 768px) {
+        text-align: left;
+        max-width: 384px;
+        padding-bottom: 135px;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 470px;
+        padding-bottom: 124px;
+    }
+}
+
+.section-focus__title {
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 36px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 38px;
+    }
+}
+
+.section-focus__header {
+    margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 16px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 44px;
+    }
+}
